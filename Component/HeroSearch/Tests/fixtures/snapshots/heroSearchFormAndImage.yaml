@@ -14,27 +14,26 @@
         contexts: {  }
         tags: {  }
         max-age: -1
+'#content': ~
 '#subtitle': Subtitle!
 '#image':
     '#theme': 15a6a101c2-NswAtoms-Image
     '#attached':
         library:
             - pinto/15a6a101c2-NswAtoms-Image
-    '#src': /600-200-ppb.jpg
+    '#src': /800-600-ppb.jpg
     '#alt': Sample
-    '#width': 600
-    '#height': 200
+    '#width': 800
+    '#height': 600
     '#loading': eager
     '#sources': {  }
     '#imageAttributes': {  }
-    '#attributes':
-        class:
-            - nsw-section--image-html
+    '#attributes': {  }
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
-'#links': {  }
+'#linkList': ~
 '#search':
     '#theme': 80fed84dcc-NswComponents-SearchForm
     '#attached':
@@ -42,54 +41,16 @@
             - pinto/80fed84dcc-NswComponents-SearchForm
     '#attributes': {  }
     '#action': 'https://example.com/search'
-    '#input':
-        charset: utf8
-    '#button':
-        '#theme': 15a6a101c2-NswAtoms-Button
-        '#attached':
-            library:
-                - pinto/15a6a101c2-NswAtoms-Button
-        '#title': Search
-        '#href': ~
-        '#as': submit
-        '#disabled': false
-        '#iconOnly': true
-        '#iconStart':
-            '#theme': 15a6a101c2-NswAtoms-Icon
-            '#attached':
-                library:
-                    - pinto/15a6a101c2-NswAtoms-Icon
-            '#icon': search
-            '#text': ~
-            '#alignmentType': ~
-            '#attributes':
-                class:
-                    - nsw-material-icons
-            '#modifiers': {  }
-            '#size': ~
-            '#cache':
-                contexts: {  }
-                tags: {  }
-                max-age: -1
-        '#iconEnd': ~
-        '#modifiers': {  }
-        '#containerAttributes':
-            class:
-                - nsw-button--dark
-        '#attributes':
-            class:
-                - nsw-button--dark
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
+    '#id': id
+    '#name': q
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
 '#modifiers': {  }
 '#attributes':
-    fixme: {  }
+    fixme:
+        value: fixme
 '#cache':
     contexts: {  }
     tags: {  }
