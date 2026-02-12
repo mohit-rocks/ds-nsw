@@ -28,10 +28,10 @@
     '#title': ~
     '#items':
         -
-            '#theme': c2e75f8655-CommonAtoms-Link
+            '#theme': 15a6a101c2-NswAtoms-Link
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
+                    - pinto/15a6a101c2-NswAtoms-Link
             '#title': ''
             '#href': 'http://example.com/'
             '#more': false
@@ -72,13 +72,14 @@
         tags: {  }
         max-age: -1
 '#title':
-    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#theme': 15a6a101c2-NswAtoms-Heading
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Heading
-    '#heading': 'A Heading!!!'
-    '#level': h2
+            - pinto/15a6a101c2-NswAtoms-Heading
+    '#title': 'A Heading!!!'
+    '#as': h2
     '#attributes': {  }
+    '#modifiers': {  }
     '#cache':
         contexts: {  }
         tags: {  }
@@ -95,10 +96,10 @@
         tags: {  }
         max-age: -1
 '#link':
-    '#theme': c2e75f8655-CommonAtoms-Link
+    '#theme': 15a6a101c2-NswAtoms-Link
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Link
+            - pinto/15a6a101c2-NswAtoms-Link
     '#title': ''
     '#href': 'http://example.com/'
     '#more': false

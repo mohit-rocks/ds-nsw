@@ -9,6 +9,7 @@ use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Common\Utility\TemplateDirectory;
+use PreviousNext\Ds\Common\Utility\TemplateFile;
 use PreviousNext\Ds\Nsw\Component;
 
 #[CanonicalProduct]
@@ -23,6 +24,7 @@ enum NswComponents implements ObjectListInterface {
   case Accordion;
 
   #[Definition(Component\Accordion\AccordionItem\AccordionItem::class)]
+  #[DependencyOn(NswAtoms::Icon)]
   case AccordionItem;
 
   #[Definition(Component\Breadcrumb\Breadcrumb::class)]
@@ -68,6 +70,14 @@ enum NswComponents implements ObjectListInterface {
 
   #[Definition(Component\SocialLinks\SocialLinks::class)]
   case SocialLinks;
+
+  #[Definition(Component\Steps\Steps::class)]
+  case Steps;
+
+  #[TemplateFile('steps-item')]
+  #[TemplateDirectory('Component/Steps')]
+  #[Definition(Component\Steps\Step\Step::class)]
+  case Step;
 
   #[Definition(Component\Tabs\Tabs::class)]
   case Tabs;
