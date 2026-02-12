@@ -46,6 +46,7 @@ enum NswComponents implements ObjectListInterface {
   case HeroBanner;
 
   #[Definition(Component\HeroSearch\HeroSearch::class)]
+  #[DependencyOn(NswLayouts::Section)]
   case HeroSearch;
 
   #[Definition(Component\LinkList\LinkList::class)]
@@ -81,6 +82,7 @@ enum NswComponents implements ObjectListInterface {
   case TabItem;
 
   #[Definition(Component\SearchForm\SearchForm::class)]
+  #[DependencyOn(NswAtoms::Icon)]
   #[TemplateDirectory('Form/Search')]
   case SearchForm;
 

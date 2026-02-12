@@ -8,8 +8,6 @@ use Pinto\Attribute\Asset;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom as CommonAtom;
 use PreviousNext\Ds\Common\Component as CommonComponent;
-use PreviousNext\Ds\Common\Component\HeroSearch\HeroSearchModifierInterface;
-use PreviousNext\Ds\Common\Modifier;
 use PreviousNext\Ds\Nsw\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
@@ -28,13 +26,20 @@ class HeroSearch extends CommonComponent\HeroSearch\HeroSearch implements Utilit
     // @fixme workaround scoping bug with `_class_handler.twig`
     $this->containerAttributes['fixme'] = 'fixme';
 
+    // Always remove link headings.
+    if (NULL !== $this->links) {
+      $this->links->title = NULL;
+    }
+
     return $build
       ->set('title', $this->title)
+      // Not currently used by NSWDS.
+      ->set('content', NULL)
       ->set('subtitle', $this->subtitle)
       ->set('image', $this->image)
-      ->set('search', $this->search)
+      ->set('search', $this->searchForm)
       ->set('links', \array_map(static fn (CommonAtom\Link\Link $link) => ($link)(), $this->links?->toArray() ?? []))
-      ->set('modifiers', new Modifier\ModifierBag(HeroSearchModifierInterface::class))
+      ->set('modifiers', [])
       ->set('containerAttributes', $this->containerAttributes);
   }
 
