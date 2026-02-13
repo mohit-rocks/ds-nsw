@@ -1,0 +1,174 @@
+'#theme': 80fed84dcc-NswComponents-ContentBlock
+'#attached':
+    library:
+        - pinto/80fed84dcc-NswComponents-ContentBlock
+'#title':
+    '#theme': 15a6a101c2-NswAtoms-Heading
+    '#attached':
+        library:
+            - pinto/15a6a101c2-NswAtoms-Heading
+    '#title': 'Content block title!'
+    '#as': h2
+    '#attributes':
+        class:
+            - nsw-content-block__title
+    '#modifiers': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#content':
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        -
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#image': ~
+'#icon': {  }
+'#link':
+    '#theme': 15a6a101c2-NswAtoms-Link
+    '#attached':
+        library:
+            - pinto/15a6a101c2-NswAtoms-Link
+    '#title': 'Link to more content!'
+    '#href': 'https://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd': ~
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#linkList':
+    '#theme': 80fed84dcc-NswComponents-LinkList
+    '#attached':
+        library:
+            - pinto/80fed84dcc-NswComponents-LinkList
+    '#title': ~
+    '#items':
+        -
+            '#theme': 15a6a101c2-NswAtoms-Link
+            '#attached':
+                library:
+                    - pinto/15a6a101c2-NswAtoms-Link
+            '#title': 'Link 1!'
+            '#href': 'https://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': 15a6a101c2-NswAtoms-Link
+            '#attached':
+                library:
+                    - pinto/15a6a101c2-NswAtoms-Link
+            '#title': 'Link 2!'
+            '#href': 'https://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': 15a6a101c2-NswAtoms-Link
+            '#attached':
+                library:
+                    - pinto/15a6a101c2-NswAtoms-Link
+            '#title': 'Link 3!'
+            '#href': 'https://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': 15a6a101c2-NswAtoms-Link
+            '#attached':
+                library:
+                    - pinto/15a6a101c2-NswAtoms-Link
+            '#title': 'Link 4!'
+            '#href': 'https://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': 15a6a101c2-NswAtoms-Link
+            '#attached':
+                library:
+                    - pinto/15a6a101c2-NswAtoms-Link
+            '#title': 'Link 5!'
+            '#href': 'https://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+    '#modifier': ~
+    '#attributes':
+        class:
+            - nsw-content-block__list
+        fixme:
+            value: fixme
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#attributes':
+    fixme:
+        value: fixme
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
