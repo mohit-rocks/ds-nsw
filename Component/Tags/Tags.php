@@ -8,7 +8,6 @@ use Drupal\Core\Template\Attribute;
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
-use PreviousNext\Ds\Common\Utility\Twig as CommonTwig;
 use PreviousNext\Ds\Nsw\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
@@ -57,7 +56,9 @@ class Tags extends CommonComponent\Tags\Tags implements Utility\NswObjectInterfa
         TagTypes::Text, TagTypes::Link => $this->tagAttributes ?? new Attribute(),
       })
       // Same type for all items, maybe it should be per tag?
-      ->set('type', CommonTwig::hasRenderPreprocessing() ? NULL : $this->tagType->typeName())
+      // Always set the type: Pinto 0.7 renders components without Drupal's
+      // preprocess hooks, so the `__twigTypeVar` fallback is never applied.
+      ->set('type', $this->tagType->typeName())
       ->set('__twigTypeVar', $this->tagType->typeName());
   }
 
