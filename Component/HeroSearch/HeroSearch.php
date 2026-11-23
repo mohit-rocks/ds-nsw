@@ -24,7 +24,7 @@ class HeroSearch extends CommonComponent\HeroSearch\HeroSearch implements Utilit
 
   protected function build(Slots\Build $build): Slots\Build {
     // @fixme workaround scoping bug with `_class_handler.twig`
-    $this->containerAttributes['fixme'] = 'fixme';
+    $this->containerAttributes->setAttribute('fixme', 'fixme');
 
     // Always remove link headings.
     if (NULL !== $this->links) {
