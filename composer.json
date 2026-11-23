@@ -3,11 +3,10 @@
     "type": "library",
     "minimum-stability": "beta",
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "previousnext/ds-common": "*@dev"
     },
     "require-dev": {
-        "brianium/paratest": "^7.8",
         "drupal/pinto": "0.5.1",
         "drupal/pinto_block": "0.2.0",
         "mglaman/phpstan-drupal": "^2.0",
